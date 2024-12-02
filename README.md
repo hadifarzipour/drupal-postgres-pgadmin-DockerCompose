@@ -17,21 +17,21 @@
 
 ## 📝 Docker.envfile
 
-> After running docker compose three container will be run, In this section of .env file you can set the container names 
+After running docker compose three container will be run, In this section of .env file you can set the container names 
 
-POSTGRES_CONTAINER_NAME=postgres
-DRUPAL_CONTAINER_NAME=drupal
-PGADMIN_CONTAINER_NAME=pgadmin
+>POSTGRES_CONTAINER_NAME=postgres
+>DRUPAL_CONTAINER_NAME=drupal
+>PGADMIN_CONTAINER_NAME=pgadmin
 
-> PostreSQL use following variable in order to create and maintain DB,
-DRUPAL_DATABASE_NAME=drupaldb
-DRUPAL_DATABASE_USERNAME=drupaluser
-DRUPAL_DATABASE_PASSWORD=drupalpass
+PostreSQL use following variable in order to create and maintain DB,
+>DRUPAL_DATABASE_NAME=drupaldb
+>DRUPAL_DATABASE_USERNAME=drupaluser
+>DRUPAL_DATABASE_PASSWORD=drupalpass
 
->You need Email address and Password to login into PGAdmin and a port to login PGAdmin
-PGADMIN_EMAIL_ADDRESS=myemail@gmail.com
-PGADMIN_PASSWORD=pass123
-PGADMIN_LISTEN_PORT=8089
+You need Email address and Password to login into PGAdmin and a port to login PGAdmin
+>PGADMIN_EMAIL_ADDRESS=myemail@gmail.com
+>PGADMIN_PASSWORD=pass123
+>PGADMIN_LISTEN_PORT=8089
 
 **Example:**
 This project is a simple yet powerful tool that helps developers automate common tasks in their workflows, improving productivity and reducing errors.
