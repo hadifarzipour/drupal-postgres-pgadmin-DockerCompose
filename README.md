@@ -1,13 +1,10 @@
-# Project Title
-
-![Project Logo](path/to/logo.png)
-
-> A brief description of what your project does and why it’s useful.
+# Drupal, PostgreSQL and PGAdmin Docker Compose
+> In this repository you can find all information to run Drupal with PostgreSQL and PGAdmin to manage the DataBase.
 
 ---
 
 ## 📜 Table of Contents
-- [Description](#description)
+- [Docker .env file](#Docker .env file)
 - [Features](#features)
 - [Demo](#demo)
 - [Installation](#installation)
@@ -18,9 +15,23 @@
 
 ---
 
-## 📝 Description
+## 📝 Docker .env file
 
-Provide a detailed explanation of what your project is about, what problem it solves, and why it’s important. You can include screenshots, diagrams, or other visual content to make the description more engaging.
+> After running docker compose three container will be run, In this section of .env file you can set the container names 
+
+POSTGRES_CONTAINER_NAME=postgres
+DRUPAL_CONTAINER_NAME=drupal
+PGADMIN_CONTAINER_NAME=pgadmin
+
+> PostreSQL use following variable in order to create and maintain DB,
+DRUPAL_DATABASE_NAME=drupaldb
+DRUPAL_DATABASE_USERNAME=drupaluser
+DRUPAL_DATABASE_PASSWORD=drupalpass
+
+>You need Email address and Password to login into PGAdmin and a port to login PGAdmin
+PGADMIN_EMAIL_ADDRESS=myemail@gmail.com
+PGADMIN_PASSWORD=pass123
+PGADMIN_LISTEN_PORT=8089
 
 **Example:**
 This project is a simple yet powerful tool that helps developers automate common tasks in their workflows, improving productivity and reducing errors.
