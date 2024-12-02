@@ -1,7 +1,3 @@
-Certainly! Here's the exact code for the README.md file that you can copy and paste directly into your GitHub repository:
-
-markdown
-Copy code
 # Project Title: Drupal with PostgreSQL and pgAdmin
 
 This project sets up a **Drupal** website using **PostgreSQL** as the database and **pgAdmin** for managing the database. It uses **Docker Compose** to spin up three services: **PostgreSQL**, **Drupal**, and **pgAdmin**.
@@ -22,7 +18,7 @@ Make sure you have the following installed on your machine:
 ### Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/your-repo-name.git
+git clone https://github.com/hadifarzipour/drupal-postgres-pgadmin-DockerCompose
 cd your-repo-name
 🔧 Configuration
 Before running the containers, configure the environment variables in the .env file. This file contains sensitive information, so ensure that it is kept secure.
@@ -30,8 +26,7 @@ Before running the containers, configure the environment variables in the .env f
 .env File
 You should have a .env file in the root of your project directory. This file contains environment variables used by the Docker Compose configuration.
 
-bash
-Copy code
+
 # Container Names
 POSTGRES_CONTAINER_NAME=postgres
 DRUPAL_CONTAINER_NAME=drupal
@@ -46,15 +41,18 @@ DRUPAL_DATABASE_PASSWORD=drupalpass
 PGADMIN_EMAIL_ADDRESS=myemail@gmail.com
 PGADMIN_PASSWORD=pass123
 PGADMIN_LISTEN_PORT=8089
-POSTGRES_CONTAINER_NAME: Name of the PostgreSQL container.
-DRUPAL_CONTAINER_NAME: Name of the Drupal container.
-PGADMIN_CONTAINER_NAME: Name of the pgAdmin container.
+
+POSTGRES_CONTAINER_NAME: Name of the PostgreSQL container name.
+DRUPAL_CONTAINER_NAME: Name of the Drupal container name.
+PGADMIN_CONTAINER_NAME: Name of the pgAdmin container name.
 DRUPAL_DATABASE_NAME: The name of the database to be created for Drupal.
 DRUPAL_DATABASE_USERNAME: The username for the Drupal database.
 DRUPAL_DATABASE_PASSWORD: The password for the Drupal database.
 PGADMIN_EMAIL_ADDRESS: The email used to log in to pgAdmin.
 PGADMIN_PASSWORD: The password used to log in to pgAdmin.
 PGADMIN_LISTEN_PORT: The port on which pgAdmin will listen.
+
+
 ⚙️ Running the Containers
 Once the .env file is configured, you can spin up the containers using Docker Compose.
 
