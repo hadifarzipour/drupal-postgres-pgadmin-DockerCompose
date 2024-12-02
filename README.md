@@ -1,4 +1,4 @@
-# Project Title: Drupal with PostgreSQL and pgAdmin
+# Drupal with PostgreSQL and pgAdmin
 
 This project sets up a **Drupal** website using **PostgreSQL** as the database and **pgAdmin** for managing the database. It uses **Docker Compose** to spin up three services: **PostgreSQL**, **Drupal**, and **pgAdmin**.
 
