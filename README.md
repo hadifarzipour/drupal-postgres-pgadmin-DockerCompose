@@ -25,6 +25,7 @@ POSTGRES_CONTAINER_NAME=postgres
 DRUPAL_CONTAINER_NAME=drupal
 PGADMIN_CONTAINER_NAME=pgadmin
 
+```markdown
 # PostgreSQL Database Configuration
 DRUPAL_DATABASE_NAME=drupaldb
 DRUPAL_DATABASE_USERNAME=drupaluser
