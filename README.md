@@ -17,7 +17,6 @@ Make sure you have the following installed on your machine:
 
 ### Clone the Repository
 
-```bash
 git clone https://github.com/hadifarzipour/drupal-postgres-pgadmin-DockerCompose
 cd your-repo-name
 🔧 Configuration
