@@ -4,7 +4,7 @@
 ---
 
 ## 📜 Table of Contents
-- [Docker .env file](#Docker .env file)
+- [Docker.envfile](#Docker .env file)
 - [Features](#features)
 - [Demo](#demo)
 - [Installation](#installation)
@@ -15,7 +15,7 @@
 
 ---
 
-## 📝 Docker .env file
+## 📝 Docker.envfile
 
 > After running docker compose three container will be run, In this section of .env file you can set the container names 
 
