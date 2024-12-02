@@ -1,0 +1,61 @@
+services:
+  postgres:
+    image: "postgres:16"
+    container_name: "${POSTGRES_CONTAINER_NAME}"
+    restart: "always"
+    environment:
+      POSTGRES_DB: "${DRUPAL_DATABASE_NAME}"
+      POSTGRES_USER: "${DRUPAL_DATABASE_USERNAME}"
+      POSTGRES_PASSWORD: "${DRUPAL_DATABASE_PASSWORD}"
+    volumes:
+      - vol_postgres:/var/lib/postgresql/data
+    networks:
+      - "net_db"
+
+  drupal:
+    image: "drupal:php8.3"
+    container_name: "DRUPAL_CONTAINER_NAME"
+    restart: "always"
+    volumes:
+      - vol_drupal_modules:/var/www/html/modules
+      - vol_drupal_profiles:/var/www/html/profiles
+      - vol_drupal_themes:/var/www/html/themes
+      - vol_drupal_sites:/var/www/html/sites
+    networks:
+      - "net_db"
+      - "net_web"
+    ports:
+      - "8080:80"      
+    depends_on:
+      - ${POSTGRES_CONTAINER_NAME}
+
+  pgadmin:
+    image: elestio/pgadmin:REL-8_13
+    container_name: "PGADMIN_CONTAINER_NAME"
+    restart: always
+    environment:
+      PGADMIN_DEFAULT_EMAIL: "${PGADMIN_EMAIL_ADDRESS}"
+      PGADMIN_DEFAULT_PASSWORD: "${PGADMIN_PASSWORD}"
+      PGADMIN_LISTEN_PORT: "${PGADMIN_LISTEN_PORT}"
+    volumes:
+      - vol_pgadmin:/pgadmin4/servers.json
+    networks:
+      - "net_db"      
+    ports:
+      - "127.0.0.1:${PGADMIN_LISTEN_PORT}:${PGADMIN_LISTEN_PORT}"
+    depends_on:
+      - ${POSTGRES_CONTAINER_NAME}    
+
+networks:
+  net_web:
+    driver: "bridge"
+  net_db:
+    driver: "bridge"
+
+volumes:
+  vol_drupal_modules:
+  vol_drupal_profiles:
+  vol_drupal_themes:
+  vol_drupal_sites:
+  vol_postgres:
+  vol_pgadmin:
