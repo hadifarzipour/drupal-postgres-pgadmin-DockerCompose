@@ -20,16 +20,18 @@
 After running docker compose three container will be run, In this section of .env file you can set the container names 
 
 ```bash
+# Docker Container Names
 POSTGRES_CONTAINER_NAME=postgres
 DRUPAL_CONTAINER_NAME=drupal
 PGADMIN_CONTAINER_NAME=pgadmin
 
+# PostgreSQL Database Configuration
+DRUPAL_DATABASE_NAME=drupaldb
+DRUPAL_DATABASE_USERNAME=drupaluser
+DRUPAL_DATABASE_PASSWORD=drupalpass
 
 
-PostreSQL use following variable in order to create and maintain DB,
->DRUPAL_DATABASE_NAME=drupaldb
->DRUPAL_DATABASE_USERNAME=drupaluser
->DRUPAL_DATABASE_PASSWORD=drupalpass
+
 
 You need Email address and Password to login into PGAdmin and a port to login PGAdmin
 >PGADMIN_EMAIL_ADDRESS=myemail@gmail.com
