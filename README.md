@@ -19,9 +19,10 @@
 
 After running docker compose three container will be run, In this section of .env file you can set the container names 
 
->POSTGRES_CONTAINER_NAME=postgres \n
->DRUPAL_CONTAINER_NAME=drupal
->PGADMIN_CONTAINER_NAME=pgadmin
+```bash
+POSTGRES_CONTAINER_NAME=postgres
+DRUPAL_CONTAINER_NAME=drupal
+PGADMIN_CONTAINER_NAME=pgadmin
 
 PostreSQL use following variable in order to create and maintain DB,
 >DRUPAL_DATABASE_NAME=drupaldb
