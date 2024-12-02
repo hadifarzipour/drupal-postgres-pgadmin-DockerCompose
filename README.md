@@ -19,7 +19,7 @@
 
 After running docker compose three container will be run, In this section of .env file you can set the container names 
 
->POSTGRES_CONTAINER_NAME=postgres
+>POSTGRES_CONTAINER_NAME=postgres \n
 >DRUPAL_CONTAINER_NAME=drupal
 >PGADMIN_CONTAINER_NAME=pgadmin
 
