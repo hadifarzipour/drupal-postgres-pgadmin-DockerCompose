@@ -50,17 +50,17 @@ PGADMIN_LISTEN_PORT=8089
 ```
 
 **All .env environments and descriptions**
-```
-POSTGRES_CONTAINER_NAME: Name of the PostgreSQL container name.
-DRUPAL_CONTAINER_NAME: Name of the Drupal container name.
-PGADMIN_CONTAINER_NAME: Name of the pgAdmin container name.
-DRUPAL_DATABASE_NAME: The name of the database to be created for Drupal.
-DRUPAL_DATABASE_USERNAME: The username for the Drupal database.
-DRUPAL_DATABASE_PASSWORD: The password for the Drupal database.
-PGADMIN_EMAIL_ADDRESS: The email used to log in to pgAdmin.
-PGADMIN_PASSWORD: The password used to log in to pgAdmin.
-PGADMIN_LISTEN_PORT: The port on which pgAdmin will listen.
-```
+
+- ***POSTGRES_CONTAINER_NAME:** Name of the PostgreSQL container name.*
+- ***DRUPAL_CONTAINER_NAME:** Name of the Drupal container name.*
+- ***PGADMIN_CONTAINER_NAME:** Name of the pgAdmin container name.*
+- ***DRUPAL_DATABASE_NAME:** The name of the database to be created for Drupal.*
+- ***DRUPAL_DATABASE_USERNAME:** The username for the Drupal database.*
+- ***DRUPAL_DATABASE_PASSWORD:** The password for the Drupal database.*
+- ***PGADMIN_EMAIL_ADDRESS:** The email used to log in to pgAdmin.*
+- ***PGADMIN_PASSWORD:** The password used to log in to pgAdmin.*
+- ***PGADMIN_LISTEN_PORT:** The port on which pgAdmin will listen.*
+
 
 ⚙️ **Running the Containers**
 Once the .env file is configured, you can spin up the containers using Docker Compose.
@@ -93,10 +93,10 @@ Set up your Drupal with follwing steps
 - *Choose language: choose your language*
 - *Choose profile: Choose your profile, Standard is recomended*
 - *Set up database: Select PostgreSQL and fill the values acording to vlaue you have entered on your .env file*
-- *Database name: DRUPAL_DATABASE_NAME (as set in .env)*
-- *Database username: DRUPAL_DATABASE_USERNAME (as set in .env)*
-- *Database password: DRUPAL_DATABASE_PASSWORD (as set in .env)*
-- *In advanced options, enter the Host value: POSTGRES_CONTAINER_NAME (as set in .env)*
+- *Database name: **DRUPAL_DATABASE_NAME** (as set in .env)*
+- *Database username: **DRUPAL_DATABASE_USERNAME** (as set in .env)*
+- *Database password: **DRUPAL_DATABASE_PASSWORD** (as set in .env)*
+- *In advanced options, enter the Host value: **POSTGRES_CONTAINER_NAME** (as set in .env)*
         
 
 ⚙️ **Configuring pgAdmin first Login**
@@ -108,16 +108,16 @@ ssh -L 127.0.0.1:<PGADMIN_LISTEN_PORT>:127.0.0.1:<PGADMIN_LISTEN_PORT> <user>@<d
 
 After browse http://127.0.0.1:<PGADMIN_LISTEN_PORT> and login to your pgAdmin with following provided username password.
 
-- *Username: PGADMIN_EMAIL_ADDRESS (as set in .env)*
-- *Password: PGADMIN_PASSWORD(as set in .env)*
+- *Username: **PGADMIN_EMAIL_ADDRESS** (as set in .env)*
+- *Password: **PGADMIN_PASSWORD** (as set in .env)*
 
 after login to your pgAdmin, on the left side, right click on **Servers > Register > Server** give a name for server!
 
 on connection tab, give following information:
 
-- *Host name/address: POSTGRES_CONTAINER_NAME*
-- *Username: DRUPAL_DATABASE_USERNAME*
-- *Password: DRUPAL_DATABASE_PASSWORD*
+- *Host name/address: **POSTGRES_CONTAINER_NAME***
+- *Username: **DRUPAL_DATABASE_USERNAME***
+- *Password: **DRUPAL_DATABASE_PASSWORD***
 
   
 save and enjoy your Drupal with PostgreSQL
