@@ -27,25 +27,22 @@ Before running the containers, configure the environment variables in the .env f
 
 🔑 Environment Variables
 You should have a .env file in the root of your project directory. This file contains environment variables used by the Docker Compose configuration.
+
 Here are the environment variables you need to configure in your .env file:
 
 ### Container Names
-
 ```
 POSTGRES_CONTAINER_NAME=postgres
 DRUPAL_CONTAINER_NAME=drupal
 PGADMIN_CONTAINER_NAME=pgadmin
 ```
 ### PostgreSQL Database Settings
-
 ```
 DRUPAL_DATABASE_NAME=drupaldb
 DRUPAL_DATABASE_USERNAME=drupaluser
 DRUPAL_DATABASE_PASSWORD=drupalpass
 ```
-
 ### pgAdmin Settings
-
 ```
 PGADMIN_EMAIL_ADDRESS=myemail@gmail.com
 PGADMIN_PASSWORD=pass123
@@ -53,7 +50,6 @@ PGADMIN_LISTEN_PORT=8089
 ```
 
 ### All .env environments and descriptions
-
 ```
 POSTGRES_CONTAINER_NAME: Name of the PostgreSQL container name.
 DRUPAL_CONTAINER_NAME: Name of the Drupal container name.
@@ -79,7 +75,8 @@ docker-compose up -d
 This will:
 Build the Docker images if needed.
 Start the containers in detached mode (-d).
-Stop the Containers
+
+Stop the Containers:
 To stop the running containers, use the following command:
 
 ```
@@ -97,19 +94,13 @@ In this Docker compose Drupal is running on 8080 port, go to following address t
 
 Set up your Drupal with follwing steps
 
-Choose language: choose your language
-
-Choose profile: Choose your profile, Standard is recomended
-
-Set up database: Select PostgreSQL and fill the values acording to vlaue you have entered on your .env file
-
-        Database name: DRUPAL_DATABASE_NAME (as set in .env)
-	
-        Database username: DRUPAL_DATABASE_USERNAME (as set in .env)
-	
-        Database password: DRUPAL_DATABASE_PASSWORD (as set in .env)
-	
-        In advanced options, enter the Host value: POSTGRES_CONTAINER_NAME (as set in .env)
+[] Choose language: choose your language
+[] Choose profile: Choose your profile, Standard is recomended
+[] Set up database: Select PostgreSQL and fill the values acording to vlaue you have entered on your .env file
+        [] Database name: DRUPAL_DATABASE_NAME (as set in .env)
+        [] Database username: DRUPAL_DATABASE_USERNAME (as set in .env)
+	[] Database password: DRUPAL_DATABASE_PASSWORD (as set in .env)
+	[] In advanced options, enter the Host value: POSTGRES_CONTAINER_NAME (as set in .env)
         
 
 ⚙️ Configuring pgAdmin first Login
