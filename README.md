@@ -94,13 +94,13 @@ In this Docker compose Drupal is running on 8080 port, go to following address t
 
 Set up your Drupal with follwing steps
 
-- [] Choose language: choose your language
-- [] Choose profile: Choose your profile, Standard is recomended
-- [] Set up database: Select PostgreSQL and fill the values acording to vlaue you have entered on your .env file
-- [] Database name: DRUPAL_DATABASE_NAME (as set in .env)
-- [] Database username: DRUPAL_DATABASE_USERNAME (as set in .env)
-- [] Database password: DRUPAL_DATABASE_PASSWORD (as set in .env)
-- [] In advanced options, enter the Host value: POSTGRES_CONTAINER_NAME (as set in .env)
+- [ ] Choose language: choose your language
+- [ ] Choose profile: Choose your profile, Standard is recomended
+- [ ] Set up database: Select PostgreSQL and fill the values acording to vlaue you have entered on your .env file
+- [ ] Database name: DRUPAL_DATABASE_NAME (as set in .env)
+- [ ] Database username: DRUPAL_DATABASE_USERNAME (as set in .env)
+- [ ] Database password: DRUPAL_DATABASE_PASSWORD (as set in .env)
+- [ ] In advanced options, enter the Host value: POSTGRES_CONTAINER_NAME (as set in .env)
         
 
 ⚙️ Configuring pgAdmin first Login
