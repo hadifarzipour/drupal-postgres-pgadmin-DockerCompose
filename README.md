@@ -4,6 +4,21 @@ This project sets up a **Drupal** website using **PostgreSQL** as the database a
 
 ---
 
+> [!NOTE]
+> Useful information that users should know, even when skimming content.
+
+> [!TIP]
+> Helpful advice for doing things better or more easily.
+
+> [!IMPORTANT]
+> Key information users need to know to achieve their goal.
+
+> [!WARNING]
+> Urgent info that needs immediate user attention to avoid problems.
+
+> [!CAUTION]
+> Advises about risks or negative outcomes of certain actions.
+
 ## 🚀 Getting Started
 
 Follow these steps to set up and run the project on your local machine.
@@ -106,7 +121,7 @@ you need to use ssh port forwarding to log in to pgAdmin, first use the followin
 ssh -L 127.0.0.1:<PGADMIN_LISTEN_PORT>:127.0.0.1:<PGADMIN_LISTEN_PORT> <user>@<dockerhost>
 ```
 
-After browse http://127.0.0.1:<PGADMIN_LISTEN_PORT> and login to your pgAdmin with following provided username password.
+After browse *127.0.0.1:<PGADMIN_LISTEN_PORT>* and login to your pgAdmin with following provided username password.
 
 - *Username: **PGADMIN_EMAIL_ADDRESS** (as set in .env)*
 - *Password: **PGADMIN_PASSWORD** (as set in .env)*
