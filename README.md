@@ -30,12 +30,16 @@ Make sure you have the following installed on your machine:
 - **Docker**: [Download Docker](https://www.docker.com/get-started)
 - **Docker Compose**: Docker Compose is bundled with Docker Desktop (Windows/macOS) or can be installed separately on Linux.
 
+
+
 ### Clone the Repository
 
 ```
 git clone https://github.com/hadifarzipour/drupal-postgres-pgadmin-DockerCompose
 cd drupal-postgres-pgadmin-DockerCompose
 ```
+
+
 
 ### 🔑Environment Variables
 🔧 Configuration
@@ -77,6 +81,7 @@ PGADMIN_LISTEN_PORT=8089
 - ***PGADMIN_LISTEN_PORT:** The port on which pgAdmin will listen.*
 
 
+
 ### Running the Containers
 Once the .env file is configured, you can spin up the containers using Docker Compose.
 
@@ -97,6 +102,8 @@ docker-compose down
 
 This will stop and remove all the containers created by Docker Compose.
 
+
+
 ### ⚙️Configuring Drupal first Login
 In this Docker compose Drupal is running on 8080 port, go to following address to first time Drupal setup
 
@@ -113,6 +120,7 @@ Set up your Drupal with follwing steps
 - *Database password: **DRUPAL_DATABASE_PASSWORD** (as set in .env)*
 - *In advanced options, enter the Host value: **POSTGRES_CONTAINER_NAME** (as set in .env)*
         
+
 
 ### ⚙️Configuring pgAdmin first Login
 you need to use ssh port forwarding to log in to pgAdmin, first use the following command on your ssh client:
