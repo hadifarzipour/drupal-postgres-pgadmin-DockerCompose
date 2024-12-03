@@ -112,9 +112,9 @@ ssh -L 127.0.0.1:<PGADMIN_LISTEN_PORT>:127.0.0.1:<PGADMIN_LISTEN_PORT> <user>@<d
 
 After browse http://127.0.0.1:<PGADMIN_LISTEN_PORT> and login to your pgAdmin with following provided username password.
 
-Username: PGADMIN_EMAIL_ADDRESS (as set in .env)
+- [ ]Username: PGADMIN_EMAIL_ADDRESS (as set in .env)
 
-Password: PGADMIN_PASSWORD(as set in .env)
+- [ ]Password: PGADMIN_PASSWORD(as set in .env)
 
 after login to your pgAdmin, on the left side, right click on **Servers > Register > Server** give a name for server!
 
