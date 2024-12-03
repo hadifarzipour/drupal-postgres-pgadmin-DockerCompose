@@ -27,20 +27,28 @@ Before running the containers, configure the environment variables in the .env f
 You should have a .env file in the root of your project directory. This file contains environment variables used by the Docker Compose configuration.
 Here are the environment variables you need to configure in your .env file:
 
-# Container Names
+### Container Names
+
+```
 POSTGRES_CONTAINER_NAME=postgres
 DRUPAL_CONTAINER_NAME=drupal
 PGADMIN_CONTAINER_NAME=pgadmin
+```
+### PostgreSQL Database Settings
 
-# PostgreSQL Database Settings
+```
 DRUPAL_DATABASE_NAME=drupaldb
 DRUPAL_DATABASE_USERNAME=drupaluser
 DRUPAL_DATABASE_PASSWORD=drupalpass
+```
 
-# pgAdmin Settings
+### pgAdmin Settings
+
+```
 PGADMIN_EMAIL_ADDRESS=myemail@gmail.com
 PGADMIN_PASSWORD=pass123
 PGADMIN_LISTEN_PORT=8089
+```
 
 POSTGRES_CONTAINER_NAME: Name of the PostgreSQL container name.
 DRUPAL_CONTAINER_NAME: Name of the Drupal container name.
