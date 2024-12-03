@@ -67,7 +67,9 @@ Once the .env file is configured, you can spin up the containers using Docker Co
 Start the Containers
 Run the following command to start all the services (PostgreSQL, Drupal, and pgAdmin):
 
+```
 docker-compose up -d
+```
 
 This will:
 Build the Docker images if needed.
@@ -75,13 +77,18 @@ Start the containers in detached mode (-d).
 Stop the Containers
 To stop the running containers, use the following command:
 
+```
 docker-compose down
+```
+
 This will stop and remove all the containers created by Docker Compose.
 
 ⚙️ Configuring Drupal first Login
 In this Docker compose Drupal is running on 8080 port, go to following address to first time Drupal setup
 
+```
 <Your Server IP Address or Domain Name>:8080
+```
 
 Set up your Drupal with follwing steps
  Choose language: choose your language
@@ -96,7 +103,9 @@ Set up your Drupal with follwing steps
 ⚙️ Configuring pgAdmin first Login
 you need to use ssh port forwarding to log in to pgAdmin, first use the following command on your ssh client:
 
+```
 ssh -L 127.0.0.1:<PGADMIN_LISTEN_PORT>:127.0.0.1:<PGADMIN_LISTEN_PORT> <user>@<dockerhost>
+```
 
 After browse http://127.0.0.1:<PGADMIN_LISTEN_PORT> and login to your pgAdmin with following provided username password
 
