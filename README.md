@@ -53,7 +53,6 @@ PGADMIN_LISTEN_PORT=8089
 ```
 
 POSTGRES_CONTAINER_NAME: Name of the PostgreSQL container name.
-
 DRUPAL_CONTAINER_NAME: Name of the Drupal container name.
 
 PGADMIN_CONTAINER_NAME: Name of the pgAdmin container name.
