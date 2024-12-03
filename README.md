@@ -22,10 +22,10 @@ git clone https://github.com/hadifarzipour/drupal-postgres-pgadmin-DockerCompose
 cd drupal-postgres-pgadmin-DockerCompose
 ```
 
+### 🔑Environment Variables
 🔧 Configuration
 Before running the containers, configure the environment variables in the .env file. This file contains sensitive information, so ensure that it is kept secure.
 
-🔑 Environment Variables
 You should have a .env file in the root of your project directory. This file contains environment variables used by the Docker Compose configuration.
 
 Here are the environment variables you need to configure in your .env file:
@@ -62,7 +62,7 @@ PGADMIN_LISTEN_PORT=8089
 - ***PGADMIN_LISTEN_PORT:** The port on which pgAdmin will listen.*
 
 
-⚙️ **Running the Containers**
+### Running the Containers
 Once the .env file is configured, you can spin up the containers using Docker Compose.
 
 Run the following command to start all the services (PostgreSQL, Drupal, and pgAdmin):
@@ -82,7 +82,7 @@ docker-compose down
 
 This will stop and remove all the containers created by Docker Compose.
 
-⚙️ **Configuring Drupal first Login**
+### ⚙️Configuring Drupal first Login
 In this Docker compose Drupal is running on 8080 port, go to following address to first time Drupal setup
 
 ```
@@ -99,7 +99,7 @@ Set up your Drupal with follwing steps
 - *In advanced options, enter the Host value: **POSTGRES_CONTAINER_NAME** (as set in .env)*
         
 
-⚙️ **Configuring pgAdmin first Login**
+### ⚙️Configuring pgAdmin first Login
 you need to use ssh port forwarding to log in to pgAdmin, first use the following command on your ssh client:
 
 ```
