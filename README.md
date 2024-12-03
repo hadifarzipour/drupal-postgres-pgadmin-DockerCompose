@@ -53,13 +53,21 @@ PGADMIN_LISTEN_PORT=8089
 ```
 
 POSTGRES_CONTAINER_NAME: Name of the PostgreSQL container name.
+
 DRUPAL_CONTAINER_NAME: Name of the Drupal container name.
+
 PGADMIN_CONTAINER_NAME: Name of the pgAdmin container name.
+
 DRUPAL_DATABASE_NAME: The name of the database to be created for Drupal.
+
 DRUPAL_DATABASE_USERNAME: The username for the Drupal database.
+
 DRUPAL_DATABASE_PASSWORD: The password for the Drupal database.
+
 PGADMIN_EMAIL_ADDRESS: The email used to log in to pgAdmin.
+
 PGADMIN_PASSWORD: The password used to log in to pgAdmin.
+
 PGADMIN_LISTEN_PORT: The port on which pgAdmin will listen.
 
 
