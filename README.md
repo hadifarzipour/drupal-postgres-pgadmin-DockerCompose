@@ -119,18 +119,22 @@ you need to use ssh port forwarding to log in to pgAdmin, first use the followin
 ssh -L 127.0.0.1:<PGADMIN_LISTEN_PORT>:127.0.0.1:<PGADMIN_LISTEN_PORT> <user>@<dockerhost>
 ```
 
-After browse http://127.0.0.1:<PGADMIN_LISTEN_PORT> and login to your pgAdmin with following provided username password
+After browse http://127.0.0.1:<PGADMIN_LISTEN_PORT> and login to your pgAdmin with following provided username password.
 
 Username: PGADMIN_EMAIL_ADDRESS (as set in .env)
+
 Password: PGADMIN_PASSWORD(as set in .env)
 
-after login to your pgAdmin, onthe left side, right click on Servers > Register > Server
-give a name for server!
+after login to your pgAdmin, on the left side, right click on **Servers > Register > Server** give a name for server!
+
 on connection tab, give following information:
+
+```
 	Host name/address: POSTGRES_CONTAINER_NAME
 	Username: DRUPAL_DATABASE_USERNAME
 	Password: DRUPAL_DATABASE_PASSWORD
-    
+```
+  
 save and enjoy your Drupal with PostgreSQL
 
 
