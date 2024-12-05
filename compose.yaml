@@ -14,7 +14,7 @@ services:
 
   drupal:
     image: "drupal:php8.3"
-    container_name: "DRUPAL_CONTAINER_NAME"
+    container_name: "${DRUPAL_CONTAINER_NAME}"
     restart: "always"
     volumes:
       - vol_drupal_modules:/var/www/html/modules
@@ -31,7 +31,7 @@ services:
 
   pgadmin:
     image: elestio/pgadmin:REL-8_13
-    container_name: "PGADMIN_CONTAINER_NAME"
+    container_name: "${PGADMIN_CONTAINER_NAME}"
     restart: always
     environment:
       PGADMIN_DEFAULT_EMAIL: "${PGADMIN_EMAIL_ADDRESS}"
